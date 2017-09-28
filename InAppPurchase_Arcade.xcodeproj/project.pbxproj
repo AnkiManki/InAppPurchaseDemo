@@ -14,6 +14,7 @@
 		9D0E68D51F78ED9700CF562C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E68D31F78ED9700CF562C /* LaunchScreen.storyboard */; };
 		9D0E68DD1F78F0F300CF562C /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E68DC1F78F0F300CF562C /* PurchaseCell.swift */; };
 		9D0E68E01F78FFCD00CF562C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0E68DF1F78FFCD00CF562C /* StoreKit.framework */; };
+		9D3A3A141F7CF520008DA39F /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A3A131F7CF520008DA39F /* PurchaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9D0E68D61F78ED9700CF562C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0E68DC1F78F0F300CF562C /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		9D0E68DF1F78FFCD00CF562C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9D3A3A131F7CF520008DA39F /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				9D0E68D11F78ED9700CF562C /* Assets.xcassets */,
 				9D0E68D31F78ED9700CF562C /* LaunchScreen.storyboard */,
 				9D0E68D61F78ED9700CF562C /* Info.plist */,
+				9D3A3A131F7CF520008DA39F /* PurchaseManager.swift */,
 			);
 			path = InAppPurchase_Arcade;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				9D0E68CD1F78ED9700CF562C /* ViewController.swift in Sources */,
 				9D0E68CB1F78ED9700CF562C /* AppDelegate.swift in Sources */,
+				9D3A3A141F7CF520008DA39F /* PurchaseManager.swift in Sources */,
 				9D0E68DD1F78F0F300CF562C /* PurchaseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
