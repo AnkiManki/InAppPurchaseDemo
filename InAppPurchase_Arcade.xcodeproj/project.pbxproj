@@ -12,6 +12,8 @@
 		9D0E68D01F78ED9700CF562C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E68CE1F78ED9700CF562C /* Main.storyboard */; };
 		9D0E68D21F78ED9700CF562C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E68D11F78ED9700CF562C /* Assets.xcassets */; };
 		9D0E68D51F78ED9700CF562C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E68D31F78ED9700CF562C /* LaunchScreen.storyboard */; };
+		9D0E68DD1F78F0F300CF562C /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E68DC1F78F0F300CF562C /* PurchaseCell.swift */; };
+		9D0E68E01F78FFCD00CF562C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0E68DF1F78FFCD00CF562C /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9D0E68D11F78ED9700CF562C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D0E68D41F78ED9700CF562C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D0E68D61F78ED9700CF562C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D0E68DC1F78F0F300CF562C /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
+		9D0E68DF1F78FFCD00CF562C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0E68E01F78FFCD00CF562C /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				9D0E68C91F78ED9700CF562C /* InAppPurchase_Arcade */,
 				9D0E68C81F78ED9700CF562C /* Products */,
+				9D0E68DE1F78FFCD00CF562C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +62,21 @@
 			children = (
 				9D0E68CA1F78ED9700CF562C /* AppDelegate.swift */,
 				9D0E68CC1F78ED9700CF562C /* ViewController.swift */,
+				9D0E68DC1F78F0F300CF562C /* PurchaseCell.swift */,
 				9D0E68CE1F78ED9700CF562C /* Main.storyboard */,
 				9D0E68D11F78ED9700CF562C /* Assets.xcassets */,
 				9D0E68D31F78ED9700CF562C /* LaunchScreen.storyboard */,
 				9D0E68D61F78ED9700CF562C /* Info.plist */,
 			);
 			path = InAppPurchase_Arcade;
+			sourceTree = "<group>";
+		};
+		9D0E68DE1F78FFCD00CF562C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E68DF1F78FFCD00CF562C /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +112,11 @@
 					9D0E68C61F78ED9700CF562C = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,6 +158,7 @@
 			files = (
 				9D0E68CD1F78ED9700CF562C /* ViewController.swift in Sources */,
 				9D0E68CB1F78ED9700CF562C /* AppDelegate.swift in Sources */,
+				9D0E68DD1F78F0F300CF562C /* PurchaseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +296,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U52X69UCNJ;
+				DEVELOPMENT_TEAM = 8RG83ZV8YG;
 				INFOPLIST_FILE = InAppPurchase_Arcade/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanmarkovic.InAppPurchase-Arcade";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alx.InAppPurchaseArcade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,10 +311,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U52X69UCNJ;
+				DEVELOPMENT_TEAM = 8RG83ZV8YG;
 				INFOPLIST_FILE = InAppPurchase_Arcade/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanmarkovic.InAppPurchase-Arcade";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alx.InAppPurchaseArcade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
