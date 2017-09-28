@@ -16,9 +16,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+        appdelegate.homeViewController = self
     }
+    
+    
+    func enableLevel2() {
+        level2Button.isEnabled = true
+    }
+    
 
 }
 
